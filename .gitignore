@@ -35,3 +35,9 @@ Icon
 # License
 # ---------------
 /site/config/.license
+
+# Composer
+# ---------------
+# https://getkirby.com/docs/cookbook/setup/composer#starting-a-new-project
+/kirby
+/vendor
