@@ -11,6 +11,7 @@ $kirby = new Kirby([
         'content'  => $storage . '/content',
         'accounts' => $storage . '/accounts',
         'cache'    => $storage . '/cache',
+        'media'    => $storage . '/media', // NOTE: needs symlink /public/media to /storage/media
         'sessions' => $storage . '/sessions',
     ]
 ]);
