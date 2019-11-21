@@ -16,4 +16,10 @@ $kirby = new Kirby([
     ]
 ]);
 
+// create symlink if needed
+$symlink = __DIR__ . '/media';
+if (! file_exists($symlink)) {
+    symlink($kirby->roots()->media(), $symlink);
+}
+
 echo $kirby->render();
